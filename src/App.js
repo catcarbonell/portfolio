@@ -5,7 +5,7 @@ import './styles/DarkModeApp.scss';
 
 function App() {
   return (
-    <Router>
+    <Router basename="components">
       <div className=" center-container">
         <div className="center-content both">
           <Routes />
