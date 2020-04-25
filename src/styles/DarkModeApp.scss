@@ -1,0 +1,120 @@
+// ================= //
+// === DARK MODE === //
+// ================= //
+
+// === VARIABLES === //
+
+/* FONT-SIZE */
+$base-font: 14px;
+
+/* FONT-FAMILY */
+$hfont: 'Fira Code', monospace; 
+$bfont: 'Poppins', Arial, sans-serif; 
+
+/* FONT-STYLE */
+$bold: 700;
+$light: 300;
+$regular: 400;
+
+/* FONT-COLOR */
+$dark-body-color: #f0e2fd;
+$dark-link-color: #d3e7f6;
+$dark-link-hover: #fdc887;
+
+/* BACKGROUND-COLOR */
+$dark-bgcolor: #635892;
+$dark-shadow: #534a7a;
+$button-bgcolor: rgba(74,66,109, 0.7);
+
+
+// === SELECTORS === //
+
+// FONTS //
+body {
+    background: $dark-bgcolor;
+    font-family: $bfont;
+    color: $dark-body-color;
+    background-size: cover;
+    height: 95vh;
+}
+a:link, a:visited {
+    font-family: $hfont;
+    padding: 5px;
+    margin: 2px;
+    background-color: $button-bgcolor;
+    color: $dark-link-color;
+    text-decoration: none;
+}
+a:hover {
+    color: $dark-link-hover;
+}
+
+// HIGHLIGHT TEXT
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: $dark-link-color;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: $dark-link-color;
+  }
+
+
+/* ===  CONTAINERS ===  */
+
+/* ABSOLUTE CENTER */
+@mixin center($horizontal: true, $vertical: true) {
+    position: absolute;
+    // border: 1px solid rebeccapurple;
+    @if ($horizontal and $vertical) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+      left: 50%;
+      transform: translate(-50%, 0);
+    } @else if ($vertical) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .center-container {
+    // border: 1px solid chartreuse;
+    position: relative;
+    width: 95%;
+    height: 95vh;
+    margin: 20px auto;
+  }
+  
+  .center-content {
+    // border: 1px solid fuchsia;
+    height: auto;
+    width: 65%;
+    padding: 20px;
+
+    &.both {
+      @include center;
+    }
+  
+    &.horizontal {
+      @include center(true, false);
+    }
+  
+    &.vertical {
+      @include center(false, true);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+   .center-container{
+        width:  100%;
+   }
+   .center-content {
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+  }
