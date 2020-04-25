@@ -12,9 +12,9 @@ const Routes = () => {
     return (
         <Switch>
             <Route exact path="/"> <Landing /> </Route>
-            <Route path="/about"> <About /> </Route>
-            <Route path="/projects"> <Projects /> </Route>
-            <Route path="/contact"> <Contact /> </Route>
+            <Route exact path="/about"> <About /> </Route>
+            <Route exact path="/projects"> <Projects /> </Route>
+            <Route exact path="/contact"> <Contact /> </Route>
         </Switch>
     );
 }
