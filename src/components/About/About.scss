@@ -1,0 +1,114 @@
+// === ABOUT === //
+
+/* FONT-SIZE */
+$base-font: 14px;
+
+/* FONT-FAMILY */
+$hfont: 'Fira Code', monospace; 
+$bfont: 'Poppins', Arial, sans-serif; 
+
+/* FONT-STYLE */
+$bold: 700;
+$light: 300;
+$regular: 400;
+
+/* FONT-COLOR */
+$dark-body-color: #f0e2fd;
+$dark-link-color: #d3e7f6;
+$dark-link-hover: #ff80ed;
+
+/* BACKGROUND-COLOR */
+$dark-bgcolor: #635892;
+$dark-shadow: #534a7a;
+/* BOX-SHADOW */
+$box-shadow: 5px 7px 5px $dark-shadow;
+$header-shadow: 3px 4px $dark-body-color;
+/* BUTTON STYLES */
+$button-radius: 15px;
+$button-bgcolor: rgba(74,66,109, 0.7);
+$button-bgcolor-hover:  rgba(74,66,109, 1);
+
+.About {
+    div{
+        margin: 0 auto;
+    }
+    section {
+    z-index: -1;
+    width: 50%;
+    margin: 10% auto;
+    }
+    article {
+        margin-left: 3em;
+        margin-top: 1.5em;
+    }
+    h1 {
+        display: inline-block;
+        background-color: $dark-shadow;
+        font-family: $hfont;
+        font-size: $base-font * 2;
+        font-weight: $regular;
+        letter-spacing: $base-font;
+        padding: 5px 10px;
+        box-shadow: $header-shadow;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+    }
+    h2 {
+        display: inline-block;
+        background-color: $dark-shadow;
+        font-family: $hfont;
+        font-size: $base-font * 1.5;
+        font-weight: $regular;
+        letter-spacing: $base-font;
+        padding: 5px 10px;
+        box-shadow: $header-shadow;
+        text-transform: uppercase;
+    }
+
+    h3{
+        display: inline-block;
+        background-color: $dark-shadow;
+        font-family: $hfont;
+        font-size: $base-font * 1.1;
+        font-weight: $bold;
+        padding: 5px 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    .passport-img {
+        width: 95%;
+        border-radius: 20px;
+        box-shadow: $box-shadow;
+        margin-bottom: 4em;
+    }
+    .icon {
+        margin: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .About {
+        margin-top: 5em;
+
+        section {
+            width: 95%;
+            margin: 5em auto 0 auto;
+        }
+        article {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        h2 {
+          margin-top: 10px;  
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        .passport-img{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+   }
