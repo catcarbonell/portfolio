@@ -10,40 +10,39 @@ const About = () => {
                     <h1> About </h1>
                 </div>
                 <img className="passport-img" src={Passport} alt="Animal Crossing Passport" />
-               
-                <div>
-                    <h3>Currently</h3>
-                    <article>
-                        <div>
-                            <span>
-                                <i className="fas fa-map-marker-alt fa-lg" aria-label="Location"></i>
-                                &nbsp;&nbsp; San Francisco, Bay Area, CA
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <i className="fas fa-book" aria-label="Studying"></i>
-                                &nbsp;&nbsp; Studying React and for technical interviews
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <i className="fas fa-gamepad fa-lg" aria-label="Playing"></i>
-                                &nbsp;&nbsp; Animal Crossing: New Horizons
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <i className="far fa-building fa-lg" aria-label="Looking for work"></i>
-                                &nbsp;&nbsp; Available for new opportunities!
-                            </span>
-                        </div>
-                    </article>
-                </div>
+            </section>
+            <section>
+                <h2>Currently</h2>
+                <article>
+                    <div>
+                        <span>
+                            <i className="fas fa-map-marker-alt fa-lg" aria-label="Location"></i>
+                            &nbsp;&nbsp; San Francisco, Bay Area, CA
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <i className="fas fa-book" aria-label="Studying"></i>
+                            &nbsp;&nbsp; Studying React and Algorithms
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <i className="fas fa-gamepad fa-lg" aria-label="Playing"></i>
+                            &nbsp;&nbsp; Animal Crossing: New Horizons
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <i className="far fa-building fa-lg" aria-label="Looking for work"></i>
+                            &nbsp;&nbsp; Available for new opportunities!
+                        </span>
+                    </div>
+                </article>
             </section>
             <section className="About-stack">
                 <h2>Stack</h2>
-                <div>
+                <article>
                     <span className="icon">
                         <i className="fab fa-js-square fa-3x"></i>
                     </span>
@@ -62,7 +61,7 @@ const About = () => {
                     <span className="icon">
                         <i className="fab fa-sass fa-3x"></i>
                     </span>
-                </div>
+                </article>
                 <article>
                     <p> 
                         I am a web developer whose strengths lay in
