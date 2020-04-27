@@ -65,8 +65,19 @@ const About = () => {
                 </article>
                 <article>
                     <p> 
-                        I am a web developer whose strengths lay in
-                        UI design and development.
+                       JavaScript + Node, React, Express, Mongoose
+                    </p>
+                    <p>
+                        CSS3 + Sass/Scss, Bulma, Bootstrap
+                    </p>
+                    <p>
+                        SQL/NoSQL + MongoDB, PostgreSql, MySQL
+                    </p>
+                    <p>
+                        Python + Django
+                    </p>
+                    <p>
+                        HTML5
                     </p>
                 </article>
             </section>
@@ -81,7 +92,7 @@ const About = () => {
                     </article>
                 </article>
                 <article>
-                    <h3><FontAwesomeIcon icon={['fab', 'facebook']} size="2x" /> Facebook</h3>
+                    <h3><FontAwesomeIcon icon={['fab', 'facebook']} size="lg" /> Facebook</h3>
                     <article>
                         <p>News Feed/FAST UX/UI Specialist</p>
                         <p>February 2018 - September 2019</p>
