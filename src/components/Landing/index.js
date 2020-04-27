@@ -15,8 +15,8 @@ const Landing = () => {
                 </div>
                 <div>
                     <h1>Hello, I'm <Link to="/about">Cat</Link>!</h1>
-                    <p className="subtitle">I <Link to="/projects">design and build</Link> web apps!</p>
-                    <p className="subtitle">I write beginner-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!</p>
+                    <p className="subtitle">I <Link to="/projects">design and build</Link> web apps</p>
+                    <p className="subtitle"> &amp; write beginner-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!</p>
                     <LandingNav />
                 </div>
             </div>

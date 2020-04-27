@@ -15,8 +15,8 @@ const About = () => {
                     <p>
                     This portfolio was made with <FontAwesomeIcon icon={['fas', 'heart']} size="lg" />! 
                     <br />
-                    ...with the help of <FontAwesomeIcon icon={['fab', 'font-awesome']} size="2x" /> , <FontAwesomeIcon icon={['fab', 'react']} size="2x" /> , 
-                    &nbsp; and &nbsp; <FontAwesomeIcon icon={['fab', 'sass']} size="2x"/>
+                    ...and with the help of &nbsp; <FontAwesomeIcon icon={['fab', 'font-awesome']} size="2x" /> , <FontAwesomeIcon icon={['fab', 'react']} size="2x" /> , 
+                    &nbsp; and &nbsp; <FontAwesomeIcon icon={['fab', 'sass']} size="2x"/> .
                     </p>
                 </article>
             </section>
@@ -34,7 +34,7 @@ const About = () => {
                     </div>
                     <div>
                         <span>
-                        <FontAwesomeIcon icon={['fas', 'book']} size="lg"/>
+                            <FontAwesomeIcon icon={['fas', 'book']} size="lg"/>
                             &nbsp;&nbsp; Studying React and Algorithms
                         </span>
                     </div>
@@ -65,7 +65,7 @@ const About = () => {
                 </article>
                 <article>
                     <p> 
-                       JavaScript + Node, React, Express, Mongoose
+                       JavaScript + Node, React, Express, Mongoose, jQuery, Angular
                     </p>
                     <p>
                         CSS3 + Sass/Scss, Bulma, Bootstrap
