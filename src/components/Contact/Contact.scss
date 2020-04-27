@@ -77,7 +77,6 @@ $base-border-dark: 4px solid $dark-shadow;
         }
     }
    
-
     button:hover {
         color: $dark-link-hover;
         background-color: $button-bgcolor-hover;
@@ -106,6 +105,12 @@ $base-border-dark: 4px solid $dark-shadow;
         padding: $padding;
         border-radius: $button-radius;
         background: $dark-shadow;
+        color: $dark-body-color;
+    }
+    input::placeholder{
+        color: $dark-body-color;
+    }
+    textarea::placeholder{
         color: $dark-body-color;
     }
     textarea{

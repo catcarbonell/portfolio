@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import Emoji from '../Emoji';
 import '../../styles/Subpages.scss';
