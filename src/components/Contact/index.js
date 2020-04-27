@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Emoji from '../Emoji';
+import Socials from '../Socials';
 import '../../styles/Subpages.scss';
 import './Contact.scss'
 
@@ -37,11 +38,16 @@ const Contact = () => {
                 </div>
             </div>
         }
-
         <div className="Contact subpage-container">
             <section className="Contact-header">
                 <h1>Contact</h1>
                 <article>
+                    <h3>Social Media</h3>
+                    <Socials />
+                </article>
+
+                <article>
+                    <h3>Send me an email!</h3>
                     <form onSubmit={sendEmail}>
                         <div>
                             <label name="name">Name</label>

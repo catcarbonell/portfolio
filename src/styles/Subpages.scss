@@ -76,6 +76,10 @@ $button-bgcolor-hover:  rgba(74,66,109, 1);
         text-transform: uppercase;
         margin-bottom: 0;
     }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
     .cover-img {
         width: 95%;
         border-radius: 20px;
@@ -83,7 +87,7 @@ $button-bgcolor-hover:  rgba(74,66,109, 1);
         margin-bottom: 4em;
     }
     .icon {
-        margin: 10px;
+        margin-right: 1em;
     }
     .btn {
         button {

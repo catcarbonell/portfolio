@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Passport from '../../assets/passport.png';
 import '../../styles/Subpages.scss';
 
@@ -10,31 +11,42 @@ const About = () => {
                     <h1> About </h1>
                 </div>
                 <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
+                    <article>
+                    <p>
+                    This portfolio was made with <FontAwesomeIcon icon={['fas', 'heart']} size="lg" />! 
+                    <br />
+                    ...with the help of <FontAwesomeIcon icon={['fab', 'font-awesome']} size="2x" /> , <FontAwesomeIcon icon={['fab', 'react']} size="2x" /> , 
+                    &nbsp; and &nbsp; <FontAwesomeIcon icon={['fab', 'sass']} size="2x"/>
+                    </p>
+                </article>
             </section>
             <section>
                 <h2>Currently</h2>
                 <article>
+                <h3>As of 4/26/2020:</h3>
+                </article>
+                <article>
                     <div>
                         <span>
-                            <i className="fas fa-map-marker-alt fa-lg" aria-label="Location"></i>
+                            <FontAwesomeIcon icon={['fas', 'map-marker-alt']} size="lg"/>
                             &nbsp;&nbsp; San Francisco, Bay Area, CA
                         </span>
                     </div>
                     <div>
                         <span>
-                            <i className="fas fa-book" aria-label="Studying"></i>
+                        <FontAwesomeIcon icon={['fas', 'book']} size="lg"/>
                             &nbsp;&nbsp; Studying React and Algorithms
                         </span>
                     </div>
                     <div>
                         <span>
-                            <i className="fas fa-gamepad fa-lg" aria-label="Playing"></i>
+                            <FontAwesomeIcon icon={['fas', 'gamepad']} size="lg"/>
                             &nbsp;&nbsp; Animal Crossing: New Horizons
                         </span>
                     </div>
                     <div>
                         <span>
-                            <i className="far fa-building fa-lg" aria-label="Looking for work"></i>
+                            <FontAwesomeIcon icon={['fas', 'building']} size="lg"/>
                             &nbsp;&nbsp; Available for new opportunities!
                         </span>
                     </div>
@@ -43,36 +55,18 @@ const About = () => {
             <section className="About-stack">
                 <h2>Stack</h2>
                 <article>
-                    <span className="icon">
-                        <i className="fab fa-js-square fa-3x"></i>
-                    </span>
-                    <span className="icon">
-                        <i className="fab fa-node-js fa-3x"></i>
-                    </span>
-                    <span className="icon">
-                        <i className="fab fa-react fa-3x"></i>
-                    </span>
-                    <span className="icon">
-                        <i className="fab fa-html5 fa-3x"></i>
-                    </span>
-                    <span className="icon">
-                        <i className="fab fa-css3-alt fa-3x"></i>
-                    </span>
-                    <span className="icon">
-                        <i className="fab fa-sass fa-3x"></i>
-                    </span>
+                    <ul>
+                        <span className="icon"><FontAwesomeIcon icon={['fab', 'js-square']} size="2x"/></span>
+                        <span className="icon"><FontAwesomeIcon icon={['fab', 'node-js']} size="2x"/></span>
+                        <span className="icon"><FontAwesomeIcon icon={['fab', 'react']} size="2x"/></span>
+                        <span className="icon"><FontAwesomeIcon icon={['fab', 'sass']} size="2x"/></span>
+                        <span className="icon"><FontAwesomeIcon icon={['fas', 'leaf']} size="2x"/></span>
+                    </ul>
                 </article>
                 <article>
                     <p> 
                         I am a web developer whose strengths lay in
-                        UI design and development. 
-                        <br />
-                        I do have experience with
-                        MongoDB, PostgreSQL, Python, and Django. 
-                    </p>
-                    <p>
-                        I design and develop mobile-first,
-                        and always consider accessibility for my users.
+                        UI design and development.
                     </p>
                 </article>
             </section>
@@ -87,7 +81,7 @@ const About = () => {
                     </article>
                 </article>
                 <article>
-                    <h3>Facebook</h3>
+                    <h3><FontAwesomeIcon icon={['fab', 'facebook']} size="2x" /> Facebook</h3>
                     <article>
                         <p>News Feed/FAST UX/UI Specialist</p>
                         <p>February 2018 - September 2019</p>
