@@ -1,0 +1,89 @@
+// === DARK MODE ===  //
+
+/* COLORS */
+$dark-body-color: #f0e2fd;
+$dark-link-color: #d3e7f6;
+$dark-link-hover: #fdc887;
+$dark-bgcolor: #635892;
+$dark-shadow: #534a7a;
+
+/* FONT-SIZE */
+$base-font: 14px;
+
+/* FONT-FAMILY */
+$hfont: 'Fira Code', monospace; 
+$bfont: 'Poppins', Arial, sans-serif; 
+
+/* FONT-STYLE */
+$bold: 700;
+$light: 300;
+$regular: 400;
+
+/* BUTTON STYLES */
+$button-radius: 15px;
+$button-bgcolor: rgba(74,66,109, 0.7);
+$button-bgcolor-hover:  rgba(74,66,109, 1);
+
+/* PADDING/MARGIN */
+$padding: 5px 10px;
+$margin-center: 0 auto;
+
+/* BORDER */
+$base-border: 4px solid $dark-body-color;
+
+.Contact {
+    div{
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        margin-bottom: 7px;
+    }
+    input{
+        display: block;
+        width: 90%;
+        font-family: $bfont;
+        font-size: $base-font;
+        border: $base-border;
+        padding: $padding;
+        border-radius: $button-radius;
+    }
+    textarea{
+        width: 90%;
+        font-family: $bfont;
+        font-size: $base-font;
+        border-radius: $button-radius;
+        padding: $padding;
+        border: $base-border;
+    }
+    button {
+        width: 50%;
+        font-size: $base-font;
+        font-family: $bfont;
+        font-weight: $bold;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: $button-radius;
+        color: $dark-body-color;
+        background-color: $button-bgcolor;
+        border: 3px solid $button-bgcolor;
+        box-shadow: 5px 5px $button-bgcolor-hover;
+        transition: ease-in-out 0.3s;
+    }
+    a:link, a:visited {
+        color: $dark-body-color;
+        background: transparent;
+    }
+    a:hover {
+        color: $dark-link-hover;
+    }
+
+    button:hover {
+        background-color: $button-bgcolor-hover;
+        border: 3px solid $dark-link-hover;
+        transition: ease-in-out 0.3s;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}

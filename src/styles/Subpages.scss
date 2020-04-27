@@ -1,4 +1,4 @@
-// === ABOUT === //
+// === SUBPAGES STYLE === //
 
 /* FONT-SIZE */
 $base-font: 14px;
@@ -22,20 +22,21 @@ $dark-bgcolor: #635892;
 $dark-shadow: #534a7a;
 /* BOX-SHADOW */
 $box-shadow: 5px 7px 5px $dark-shadow;
-$header-shadow: 3px 4px $dark-body-color;
+$header-shadow: 3px 3px $dark-body-color;
 /* BUTTON STYLES */
 $button-radius: 15px;
 $button-bgcolor: rgba(74,66,109, 0.7);
 $button-bgcolor-hover:  rgba(74,66,109, 1);
 
-.About {
-    div{
+.subpage-container {
+    overflow-y: hidden;
+    div {
         margin: 0 auto;
     }
     section {
     z-index: -1;
     width: 50%;
-    margin: 13% auto 0 auto;
+    margin: 10% auto;
     }
     article {
         margin-left: 3em;
@@ -51,7 +52,7 @@ $button-bgcolor-hover:  rgba(74,66,109, 1);
         padding: 5px 10px;
         box-shadow: $header-shadow;
         text-transform: uppercase;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     h2 {
         display: inline-block;
@@ -64,7 +65,6 @@ $button-bgcolor-hover:  rgba(74,66,109, 1);
         box-shadow: $header-shadow;
         text-transform: uppercase;
     }
-
     h3{
         display: inline-block;
         background-color: $dark-shadow;
@@ -76,7 +76,7 @@ $button-bgcolor-hover:  rgba(74,66,109, 1);
         text-transform: uppercase;
         margin-bottom: 0;
     }
-    .passport-img {
+    .cover-img {
         width: 95%;
         border-radius: 20px;
         box-shadow: $box-shadow;
@@ -85,28 +85,57 @@ $button-bgcolor-hover:  rgba(74,66,109, 1);
     .icon {
         margin: 10px;
     }
+    .btn {
+        button {
+            font-size: $base-font;
+            font-family: $bfont;
+            font-weight: $bold;
+            padding: 10px;
+            margin: 10px 15px 10px 0;
+            border-radius: $button-radius;
+            color: $dark-body-color;
+            background-color: $button-bgcolor;
+            border: 3px solid $button-bgcolor;
+            box-shadow: 5px 5px $button-bgcolor-hover;
+            transition: ease-in-out 0.3s;
+        }
+        a:link, a:visited {
+            color: $dark-body-color;
+            background: transparent;
+        }
+        a:hover {
+            color: $dark-link-hover;
+        }
+    
+        button:hover {
+            background-color: $button-bgcolor-hover;
+            border: 3px solid $dark-link-hover;
+            transition: ease-in-out 0.3s;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
 }
 
 
 @media only screen and (max-width: 650px) {
-    .About {
-        margin-top: 5em;
-
+    .subpage-container {
+        margin-top: 0;
         section {
             width: 95%;
-            margin: 5em auto 0 auto;
+            margin: 3em auto;
         }
         article {
             margin-top: 10px;
             margin-left: 10px;
         }
         h2 {
-          margin-top: 10px;  
+            margin-top: 10px;  
         }
         h3 {
             margin-top: 10px;
         }
-        .passport-img{
+        .cover-img{
             width: 100%;
             margin: 0 auto;
         }

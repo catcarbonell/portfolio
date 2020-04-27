@@ -37,6 +37,7 @@ body {
     background-size: cover;
     height: 95vh;
 }
+
 a:link, a:visited {
     font-family: $hfont;
     padding: 5px;
@@ -44,21 +45,24 @@ a:link, a:visited {
     background-color: $button-bgcolor;
     color: $dark-link-color;
     text-decoration: none;
-}
-a:hover {
-    color: $dark-link-hover;
+    &:hover {
+        color: $dark-link-hover;
+    }
 }
 
+
 // HIGHLIGHT TEXT
-::-moz-selection { /* Code for Firefox */
+::selection {
     color: #fff;
     background: $dark-link-color;
-  }
+   &::-moz-selection { /* Code for Firefox */
+        color: #fff;
+        background: $dark-link-color;
+    }
+}
+
   
-  ::selection {
-    color: #fff;
-    background: $dark-link-color;
-  }
+
 
 
 /* ===  CONTAINERS ===  */
@@ -79,7 +83,6 @@ a:hover {
       transform: translate(0, -50%);
     }
   }
-
   .center-container {
     // border: 1px solid chartreuse;
     position: relative;

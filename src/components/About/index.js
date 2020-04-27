@@ -1,15 +1,15 @@
 import React from 'react';
 import Passport from '../../assets/passport.png';
-import './About.scss';
+import '../../styles/Subpages.scss';
 
 const About = () => {
     return(
-        <div className="About">
-            <section className="passport-img-container">
+        <div className="About subpage-container">
+            <section>
                 <div>
                     <h1> About </h1>
                 </div>
-                <img className="passport-img" src={Passport} alt="Animal Crossing Passport" />
+                <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
             </section>
             <section>
                 <h2>Currently</h2>
@@ -94,7 +94,6 @@ const About = () => {
                     </article>
                 </article>
             </section>
-            
             <section className="About-education">
                 <h2>Education</h2>
                 <article>
