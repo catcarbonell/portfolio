@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import emailjs from 'emailjs-com';
+import Emoji from '../Emoji';
 import '../../styles/Subpages.scss';
 import './Contact.scss'
 
@@ -14,9 +16,29 @@ const Contact = () => {
               console.log(error.text);
           });
       }
-
+    
+    const [ displayConfirm, toggleConfirm ] = useState(false);
+    
     
     return(
+        <>
+        {displayConfirm && 
+            <div className="confirm-modal">
+                <div className="center-content both confirm-modal-content">
+                    <p>
+                        Thanks so much for reaching out!
+                        <br />
+                        I will respond to you in 24-48 hours<Emoji symbol="👍" label="Thumbs-up" />
+                        <br />
+                        If you need me ASAP, feel free to slide into my DMs on 
+                        <a href="http://twitter.com/catcarbn" target="new">Twitter</a> or 
+                        <a href="http://linkedin.com/in/catcarbonell" target="new">LinkedIn</a>!
+                    </p>
+                    <button className="btn" onClick={() => toggleConfirm(!displayConfirm)}>Close</button>
+                </div>
+            </div>
+        }
+
         <div className="Contact subpage-container">
             <section className="Contact-header">
                 <h1>Contact</h1>
@@ -35,12 +57,13 @@ const Contact = () => {
                             <textarea placeholder="what's up?" name="message_html" rows="5"></textarea>
                         </div>
                         <div>
-                            <button className="btn" type="submit">Submit</button>
+                            <button className="btn" type="submit" onClick={() => toggleConfirm(!displayConfirm)}>Submit</button>
                         </div>
                     </form>
                 </article>
             </section>
         </div>
+        </>
     );
 };
 
