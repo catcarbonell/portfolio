@@ -1,11 +1,21 @@
 import React from 'react';
 
-const ProjectItem = () => {
+
+const ProjectItem = (props) => {
+    const ghLink = <a href={props.gh} target="new">GitHub</a>;
+    
     return(
         <div className="ProjectItem-container">
-                <img src="https://placebear.com/300/200" alt="temporary bear" />
-                <h3>Name of project</h3>
-                <p>Tech/design stack goes here</p>
+                <img src={props.thumbnail} alt={props.alt} />
+                <h3>{props.title}</h3>
+                <ul>
+                    {props.stack}               
+                </ul>
+                
+                <ul>
+                {(props.gh === undefined) ? '' : ghLink}
+                 <a href={props.demo} target="new">Live Demo</a>
+                </ul>
         </div>
     );
 };

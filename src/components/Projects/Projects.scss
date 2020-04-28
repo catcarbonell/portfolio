@@ -60,6 +60,12 @@ $transition:  ease-in-out 0.3s;
         width: 85%;
         margin: 10% auto;
     }
+    ul {
+        margin-bottom: 15px;
+    }
+    img {
+        object-fit: cover;
+    }
     .Project-container {
         // border: 1px solid skyblue;
         @include flex-left;
@@ -72,12 +78,15 @@ $transition:  ease-in-out 0.3s;
         height: auto;
         margin: 20px 0.5em;
         padding: 1.5rem 1rem;
-        border-radius: 3em;   
+        border-radius: 2em;   
         transition: $transition;
         box-shadow: $box-shadow;
         img {
+            border: 4px solid $button-bgcolor-hover;
             width: 90%;
-            border-radius: 2em;
+            border-radius: 1em;
+            opacity: 0.5;
+            transition: $transition;
         }
     }
     .ProjectItem-container:hover {
@@ -85,5 +94,28 @@ $transition:  ease-in-out 0.3s;
         transition: $transition;
         box-shadow: none;
         cursor: pointer;
+        img {
+            opacity: 1;
+            transition: $transition;
+        }
+    }
+    .ProjectItem-container:hover::before {
+        margin: 10px auto;
+        text-transform: uppercase;
+        font-family: $hfont;
+        background-color: $button-bgcolor-hover;
+        transition: $transition;
+        content: 'View project details';
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .ProjectItem-container {
+        width: 500px;
+        margin: 0;
+        padding: 0;
+    }
+    .ProjectItem-container:hover {
+        transform: scale(1);
     }
 }
