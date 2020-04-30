@@ -27,7 +27,7 @@ $header-shadow: 3px 3px $dark-body-color;
 
 /* BUTTON STYLES */
 $button-radius: 15px;
-$button-bgcolor: rgba(74,66,109, 0.8);
+$button-bgcolor: rgba(74,66,109, 0.9);
 $button-bgcolor-hover:  rgba(74,66,109, 1);
 
 /* TRANSFORMS/TRANSITIONS */
@@ -60,9 +60,6 @@ $transition:  ease-in-out 0.3s;
         width: 85%;
         margin: 10% auto;
     }
-    ul {
-        margin-bottom: 15px;
-    }
     img {
         object-fit: cover;
     }
@@ -75,38 +72,54 @@ $transition:  ease-in-out 0.3s;
         background: #554c7d;
         border: 4px solid $button-bgcolor-hover;
         width: 300px;
-        height: auto;
+        height: 300px;
         margin: 20px 0.5em;
-        padding: 1.5rem 1rem;
+        padding: 1rem 1rem;
         border-radius: 2em;   
         transition: $transition;
         box-shadow: $box-shadow;
+
         img {
             border: 4px solid $button-bgcolor-hover;
-            width: 90%;
+            width: 100%;
+            height: auto;
             border-radius: 1em;
-            opacity: 0.5;
+            transition: $transition;
+        }
+        .overlay{
+            ul {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+            border-radius: 2em;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 3px 1.2rem;
+            width: 300px;
+            height: 100%;
+            background: $button-bgcolor;
+            background-size: cover;
+            z-index: 7;
+            position: absolute;
+            transition: $transition;
+        }
+        .overlay:hover{
             transition: $transition;
         }
     }
+
     .ProjectItem-container:hover {
         transform: scale(1.2);
         transition: $transition;
         box-shadow: none;
         cursor: pointer;
         img {
-            opacity: 1;
             transition: $transition;
         }
     }
-    .ProjectItem-container:hover::before {
-        margin: 10px auto;
-        text-transform: uppercase;
-        font-family: $hfont;
-        background-color: $button-bgcolor-hover;
-        transition: $transition;
-        content: 'View project details';
-    }
+
 }
 
 @media only screen and (max-width: 650px) {

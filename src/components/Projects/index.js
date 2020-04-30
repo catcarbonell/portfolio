@@ -22,6 +22,7 @@ const Projects = () => {
                         title="Killer Kao"
                         thumbnail={killerkao}
                         alt="Landing screenshot of my project Killer Kao"  
+                        description="A rock-paper-scissors-like fighting game made with pure vanilla JavaScript!"
                         stack={js}
                         gh="https://github.com/catcarbonell/killerkao"
                         demo="https://catcarbonell.github.io/killerkao/"
@@ -31,6 +32,7 @@ const Projects = () => {
                         thumbnail={popop}
                         alt="Landing screenshot of my project PopopJS"
                         stack={js}
+                        description="A tiny, easily-customizable vanilla JavaScript modal framework / package!"
                         gh="https://github.com/catcarbonell/popop"
                         demo="https://catcarbonell.github.io/popop/"
                         />
@@ -39,6 +41,7 @@ const Projects = () => {
                         thumbnail={thx4thememeries}
                         alt="Landing screenshot of my project thanks for the meme-ries"
                         stack={js}
+                        description="A JavaScript + jQuery + AJAX-based gif search engine implementing the GIPHY API!"
                         gh="https://github.com/catcarbonell/thx4memeries"
                         demo="https://catcarbonell.github.io/thx4memeries/"
                         />
@@ -46,6 +49,8 @@ const Projects = () => {
                         title="Pikatsume" 
                         thumbnail={pikatsume}
                         alt="Landing screenshot of my Python project Pikatsume"
+                        description="A gatcha game for those who love Pikachu!  
+                        Made with Django, JavaScript, Bulma and the Stripe API!"
                         stack= {python}
                         // gh="https://git.generalassemb.ly/catcarbonell/project-Pikatsume"
                         demo="https://pikatsume.herokuapp.com/"
