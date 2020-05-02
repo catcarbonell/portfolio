@@ -29,9 +29,9 @@ const ProjectItem = (props) => {
                 </ul>
 
             </div>}
-                <img src={props.thumbnail} alt={props.alt} />
-                <h3>{props.title}</h3>
-                {props.stack}   
+            <img src={props.thumbnail} alt={props.alt} />
+            <h3>{props.title}</h3>
+            {props.stack}   
         </div>
     
     </>

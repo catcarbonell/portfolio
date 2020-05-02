@@ -1,0 +1,75 @@
+// === VARIABLES === //
+
+/* FONT-SIZE */
+$base-font: 14px;
+
+/* FONT-FAMILY */
+$hfont: 'Fira Code', monospace; 
+$bfont: 'Poppins', Arial, sans-serif; 
+
+/* FONT-STYLE */
+$bold: 700;
+$light: 300;
+$regular: 400;
+
+/* FONT-COLOR */
+$dark-body-color: #f0e2fd;
+$dark-link-color: #ff80ed;
+$dark-link-hover: #f0e2fd;
+
+/* BACKGROUND-COLOR */
+$dark-bgcolor: #635892;
+$dark-shadow: #534a7a;
+
+/* BOX-SHADOW */
+$box-shadow: 5px 7px 5px $dark-shadow;
+$header-shadow: 3px 3px $dark-body-color;
+
+/* BUTTON STYLES */
+$button-radius: 15px;
+$button-bgcolor: rgba(74,66,109, 0.9);
+$button-bgcolor-hover:  rgba(74,66,109, 1);
+
+/* TRANSFORMS/TRANSITIONS */
+$transition:  ease-in-out 0.3s;
+
+
+.Project {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 20px 40px 0 40px;
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: $button-bgcolor-hover;
+    width: 95%;
+    height: 95%;
+    border-radius: 3em;
+    box-shadow: $box-shadow;
+
+    ul { 
+        margin-left: -2.5em;
+    }
+    .icon {
+        margin-right: 10px;
+    }
+    .close {
+        align-self: flex-end;
+        margin-top: 1.5em;
+        color: $dark-body-color;
+        width: 50px;
+
+        background: transparent;
+        border: 0;
+        padding: 3px;
+        transition: $transition;
+    }
+    .close:hover {
+        color: $dark-link-color !important;
+        cursor: pointer;
+        transition: $transition;
+    }
+}

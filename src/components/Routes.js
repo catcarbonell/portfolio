@@ -7,6 +7,7 @@ import Landing from './Landing';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
+import Project from './Project';
 
 const Routes = () => {
     return (
@@ -14,7 +15,9 @@ const Routes = () => {
             <Route exact path="/"> <Landing /> </Route>
             <Route path="/about"> <About /> </Route>
             <Route path="/projects"> <Projects /> </Route>
+            <Route path="/project"> <Project /> </Route>
             <Route path="/contact"> <Contact /> </Route>
+           
         </Switch>
     );
 }
