@@ -9,6 +9,7 @@
     width: 100vw;
     margin: 0;
     overflow: hidden;
+    letter-spacing: 2px;
 }
 @media only screen and (max-width: 650px) {
     .Navbar {
@@ -17,6 +18,5 @@
         margin: 0 auto;
         left: 0;
         background: rgba(92,51,127, 0.5) 100%
-
     }
 }

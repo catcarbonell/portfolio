@@ -57,6 +57,7 @@ $transition:  ease-in-out 0.3s;
 
 
 .subpage-container {
+    cursor: ns-resize;
     // border: 1px solid chartreuse;
     overflow-y: hidden;
     div {
@@ -166,8 +167,8 @@ $transition:  ease-in-out 0.3s;
 
         .section {
             width: 95%;
-            height: 100%;
-            margin: 40% auto 20% auto;
+            height: 95vh;
+            margin: 15% auto 7% auto;
         }
         article {
             margin-top: 10px;
