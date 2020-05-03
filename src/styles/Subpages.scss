@@ -1,3 +1,4 @@
+
 // === VARIABLES === //
 
 /* FONT-SIZE */
@@ -14,12 +15,12 @@ $regular: 400;
 
 /* FONT-COLOR */
 $dark-body-color: #f0e2fd;
-$dark-link-color: #ff80ed;
+$dark-link-color: rgb(255,88,249);
+$dark-link-bg: rgba(129,72,178, 0.5);
 $dark-link-hover: #f0e2fd;
 
 /* BACKGROUND-COLOR */
 $dark-bgcolor: #635892;
-$dark-bgcolor-rgba: rgba(99,88,146, 1);
 $dark-shadow: #534a7a;
 
 /* BOX-SHADOW */
@@ -28,8 +29,8 @@ $header-shadow: 3px 3px $dark-body-color;
 
 /* BUTTON STYLES */
 $button-radius: 15px;
-$button-bgcolor: rgba(74,66,109, 0.8);
-$button-bgcolor-hover:  rgba(74,66,109, 1);
+$button-bgcolor: rgba(185,103,255, 0.5);
+$button-bgcolor-hover:  rgba(185,103,255, 0.8);
 
 /* TRANSFORMS/TRANSITIONS */
 $transition:  ease-in-out 0.3s;
@@ -61,12 +62,16 @@ $transition:  ease-in-out 0.3s;
     div {
         margin: 0 auto;
     }
-    section {
+
+    .section {
+        box-sizing: border-box;
         // border: 1px solid crimson;
         z-index: -1;
         width: 50%;
-        margin: 10% auto;
+        height: 95vh;
+        margin: 10% auto 5% auto;
     }
+
     article {
         // border: 1px solid pink;
         margin-left: 3em;
@@ -155,10 +160,14 @@ $transition:  ease-in-out 0.3s;
 
 @media only screen and (max-width: 650px) {
     .subpage-container {
+        font-size: 14px;
+        letter-spacing: 0.5px;
         margin-top: 0;
-        section {
+
+        .section {
             width: 95%;
-            margin: 3em auto;
+            height: 100%;
+            margin: 40% auto 20% auto;
         }
         article {
             margin-top: 10px;

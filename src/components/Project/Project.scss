@@ -14,7 +14,7 @@ $regular: 400;
 
 /* FONT-COLOR */
 $dark-body-color: #f0e2fd;
-$dark-link-color: #ff80ed;
+$dark-link-color: rgba(255,158,251,1);
 $dark-link-hover: #f0e2fd;
 
 /* BACKGROUND-COLOR */
@@ -35,6 +35,7 @@ $transition:  ease-in-out 0.3s;
 
 
 .Project {
+    overflow-y: auto;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;

@@ -12,7 +12,7 @@ function App() {
     
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar />
-      <div className=" center-container">
+      <div className="center-container">
           <Routes />
       </div>
     </BrowserRouter>

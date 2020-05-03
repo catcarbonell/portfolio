@@ -1,16 +1,22 @@
 .Navbar {
     display:block;
     top: 0;
-    // left: 75%;
     padding: 30px 0 25px 20px;
     position: fixed;
     z-index: 9;
-    background: rgba(99,88,146, 0.8);
+    text-transform: uppercase;
+    font-weight: 700;
     width: 100vw;
     margin: 0;
+    overflow: hidden;
 }
 @media only screen and (max-width: 650px) {
     .Navbar {
+        font-size: 0.8rem;
+        width: 100vw;
+        margin: 0 auto;
         left: 0;
+        background: rgba(92,51,127, 0.5) 100%
+
     }
 }

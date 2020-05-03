@@ -27,20 +27,17 @@ const Project = () => {
                 <p>Sole designer/developer</p>
             </div>
 
-            <div className="Project-team">
-                <h3>The Team:</h3>
-            </div>
-
             <div className="Project-challenge">
                 <h3>The Challenge:</h3>
             </div>
             
             <div className="Project-wf">
+                <h3>Wireframes/Designs:</h3>
                 <p>wireframes go here</p>
             </div>
 
             <div className="Project-details">
-                <p>details</p>
+                <p></p>
             </div>
             
         </div>
