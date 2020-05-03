@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.68f0bbd1.chunk.css",
-    "main.js": "/portfolio/static/js/main.c850c116.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c850c116.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.190871f6.chunk.css",
+    "main.js": "/portfolio/static/js/main.dea94425.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dea94425.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
-    "static/js/2.86cde47b.chunk.js": "/portfolio/static/js/2.86cde47b.chunk.js",
-    "static/js/2.86cde47b.chunk.js.map": "/portfolio/static/js/2.86cde47b.chunk.js.map",
+    "static/js/2.32a5785d.chunk.js": "/portfolio/static/js/2.32a5785d.chunk.js",
+    "static/js/2.32a5785d.chunk.js.map": "/portfolio/static/js/2.32a5785d.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a2eb7c9450186cc62b679d25d5e46c77.js": "/portfolio/precache-manifest.a2eb7c9450186cc62b679d25d5e46c77.js",
+    "precache-manifest.0e82f653c07bfc871ea93c8012f96775.js": "/portfolio/precache-manifest.0e82f653c07bfc871ea93c8012f96775.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.68f0bbd1.chunk.css.map": "/portfolio/static/css/main.68f0bbd1.chunk.css.map",
-    "static/js/2.86cde47b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.86cde47b.chunk.js.LICENSE.txt",
+    "static/css/main.190871f6.chunk.css.map": "/portfolio/static/css/main.190871f6.chunk.css.map",
+    "static/js/2.32a5785d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.32a5785d.chunk.js.LICENSE.txt",
     "static/media/headshot.jpg": "/portfolio/static/media/headshot.8df96dbd.jpg",
+    "static/media/DarkModeApp.scss": "/portfolio/static/media/keyboardbg.520ca82a.jpg",
     "static/media/killerkao.png": "/portfolio/static/media/killerkao.50ed0e0d.png",
     "static/media/passport.png": "/portfolio/static/media/passport.d02ce5ce.png",
     "static/media/pikatsume.png": "/portfolio/static/media/pikatsume.a1e87a1c.png",
@@ -21,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
-    "static/js/2.86cde47b.chunk.js",
-    "static/css/main.68f0bbd1.chunk.css",
-    "static/js/main.c850c116.chunk.js"
+    "static/js/2.32a5785d.chunk.js",
+    "static/css/main.190871f6.chunk.css",
+    "static/js/main.dea94425.chunk.js"
   ]
 }
