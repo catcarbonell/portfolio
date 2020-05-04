@@ -15,25 +15,40 @@ const About = () => {
                         <div>
                             <h1> About </h1>
                         </div>
+                        <article>
                         <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
-                            <article>
                             <p>
-                            This portfolio was made with <FontAwesomeIcon color="#f786f6" icon={['fas', 'heart']} size="lg" />
-                            <br />
-                            ...and some blood... 
-                            <br />
-                            ...maybe sweat. 
-                            <br />
-                            Definitely tears. 
-                            <br />
-                            ...and with the help of <a href="http://framer.com/api" target="new">Framer</a>, &nbsp;
-                            <FontAwesomeIcon color="#4ABFF9" icon={['fab', 'font-awesome']} size="2x" /> ,
-                            <FontAwesomeIcon color="#61DBFB" icon={['fab', 'react']} size="2x" /> , 
-                            &nbsp; and &nbsp; 
-                            <FontAwesomeIcon color="#f786be" icon={['fab', 'sass']} size="2x"/> .
+                                I started web slinging during the Geocities/Myspace/Neopets/Livejournal days, 
+                                but I never considered pursuing it as a career; in the 90s and early 00s, it was unheard of--
+                                at least to my elementary school-kid ears. 
+                            </p>
+                            <p>
+                                Plus, if you wanted to work with computers, you had to be good at math-- or so I believed.
+                            </p>
+                            <p>
+                            TL;DR: A few career changes later, here I am now, making web apps function and look pretty.
                             </p>
                         </article>
                     </div>
+            </Frame>
+            <Frame size="100%" width="auto" height="100vh" background="transparent">
+                <div className="section">
+                <p>
+                    This portfolio was made with <FontAwesomeIcon color="#f786f6" icon={['fas', 'heart']} size="lg" />
+                    <br />
+                    ...and some blood... 
+                    <br />
+                    ...maybe sweat. 
+                    <br />
+                    Definitely tears. 
+                    <br />
+                    ...and with the help of <a href="http://framer.com/api" target="new">Framer</a>, &nbsp;
+                    <FontAwesomeIcon color="#4ABFF9" icon={['fab', 'font-awesome']} size="2x" /> ,
+                    <FontAwesomeIcon color="#61DBFB" icon={['fab', 'react']} size="2x" /> , 
+                    &nbsp; and &nbsp; 
+                    <FontAwesomeIcon color="#f786be" icon={['fab', 'sass']} size="2x"/> .
+                </p>
+                </div>
             </Frame>
 
             <Frame width="auto" height="100vh" background="transparent">

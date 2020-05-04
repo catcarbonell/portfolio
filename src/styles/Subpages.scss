@@ -74,6 +74,10 @@ $transition:  ease-in-out 0.3s;
         // border: 1px solid pink;
         margin-left: 3em;
     }
+    p {
+        margin-top: 10px;
+    }
+
     h1 {
         display: inline-block;
         background-color: $button-bgcolor;
@@ -116,7 +120,7 @@ $transition:  ease-in-out 0.3s;
         width: 95%;
         border-radius: 20px;
         box-shadow: $box-shadow;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
     }
     .icon {
         margin-right: 1em;
