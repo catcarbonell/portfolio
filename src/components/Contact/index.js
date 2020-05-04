@@ -39,8 +39,8 @@ const Contact = () => {
             </div>
         }
         <div className="Contact subpage-container">
-            <section className="Contact-header">
-                <h1>Contact</h1>
+            <div className="section Contact-header">
+               <div> <h1>Contact</h1></div>
                 <article>
                     <h3>Social Media</h3>
                     <Socials />
@@ -66,7 +66,7 @@ const Contact = () => {
                         </div>
                     </form>
                 </article>
-            </section>
+            </div>
         </div>
         </>
     );

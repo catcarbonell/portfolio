@@ -1,34 +1,42 @@
 import React from 'react';
-import { Frame, Page } from "framer"
+import { Frame, Page } from "framer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Passport from '../../assets/passport.png';
 import '../../styles/Subpages.scss';
+import './About.scss';
 
 const About = () => {
     return(
         <div className="About subpage-container">
-        <Page wheelEnabled="true" alignment="center" width="100%" height="100%" contentHeight="auto" direction="vertical">
+        <Page defaultEffect="coverflow" wheelEnabled="true" alignment="center" width="100%" height="100%" contentHeight="auto" direction="vertical">
   
-            <Frame size="100%" width="auto" height="100%" background="transparent">
-
-              
+            <Frame size="100%" width="auto" height="100vh" background="transparent">
                     <div className="section">
-                    <div>
-                        <h1> About </h1>
-                    </div>
-                    <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
-                        <article>
-                        <p>
-                        This portfolio was made with <FontAwesomeIcon icon={['fas', 'heart']} size="lg" />! 
-                        <br />
-                        ...and with the help of &nbsp; <FontAwesomeIcon icon={['fab', 'font-awesome']} size="2x" /> , <FontAwesomeIcon icon={['fab', 'react']} size="2x" /> , 
-                        &nbsp; and &nbsp; <FontAwesomeIcon icon={['fab', 'sass']} size="2x"/> .
-                        </p>
-                    </article>
+                        <div>
+                            <h1> About </h1>
+                        </div>
+                        <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
+                            <article>
+                            <p>
+                            This portfolio was made with <FontAwesomeIcon color="#f786f6" icon={['fas', 'heart']} size="lg" />
+                            <br />
+                            ...and some blood... 
+                            <br />
+                            ...maybe sweat. 
+                            <br />
+                            Definitely tears. 
+                            <br />
+                            ...and with the help of <a href="http://framer.com/api" target="new">Framer</a>, &nbsp;
+                            <FontAwesomeIcon color="#4ABFF9" icon={['fab', 'font-awesome']} size="2x" /> ,
+                            <FontAwesomeIcon color="#61DBFB" icon={['fab', 'react']} size="2x" /> , 
+                            &nbsp; and &nbsp; 
+                            <FontAwesomeIcon color="#f786be" icon={['fab', 'sass']} size="2x"/> .
+                            </p>
+                        </article>
                     </div>
             </Frame>
-            
-            <Frame width="auto" height="100%" background="transparent">
+
+            <Frame width="auto" height="100vh" background="transparent">
                 <div className="section">
                     <h2>Currently</h2>
                     <article>
@@ -68,11 +76,11 @@ const About = () => {
                     <h2>Stack</h2>
                     <article>
                         <ul>
-                            <span className="icon"><FontAwesomeIcon icon={['fab', 'js-square']} size="2x"/></span>
-                            <span className="icon"><FontAwesomeIcon icon={['fab', 'node-js']} size="2x"/></span>
-                            <span className="icon"><FontAwesomeIcon icon={['fab', 'react']} size="2x"/></span>
-                            <span className="icon"><FontAwesomeIcon icon={['fab', 'sass']} size="2x"/></span>
-                            <span className="icon"><FontAwesomeIcon icon={['fas', 'leaf']} size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon color="#F0DB4F" icon={['fab', 'js-square']} size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon color="#68A063" icon={['fab', 'node-js']} size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon color="#61DBFB" icon={['fab', 'react']} size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon color="#f786be" icon={['fab', 'sass']} size="2x"/></span>
+                            <span className="icon"><FontAwesomeIcon color="#4DB33D" icon={['fas', 'leaf']} size="2x"/></span>
                         </ul>
                     </article>
                     <article>

@@ -24,6 +24,7 @@ const Projects = () => {
                         alt="Landing screenshot of my project Killer Kao"  
                         description="A rock-paper-scissors-like fighting game made with pure vanilla JavaScript!"
                         stack={js}
+                        project="/killerkao"
                         gh="https://github.com/catcarbonell/killerkao"
                         demo="https://catcarbonell.github.io/killerkao/"
                         />

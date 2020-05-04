@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 const ProjectItem = (props) => {
@@ -21,7 +22,7 @@ const ProjectItem = (props) => {
                 
                 <ul>
                     <p>
-                        <a href="#">View Project Details</a> 
+                        <Link to={props.project}>View Project Details</Link> 
                     </p>
 
                     {(props.gh === undefined) ? '' : ghLink}

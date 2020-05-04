@@ -23,8 +23,9 @@ const Landing = () => {
                     </div>
 
                     <LandingNav />
+
                 </div>
-            </div>
+            </div> 
         </div>
     );
 };

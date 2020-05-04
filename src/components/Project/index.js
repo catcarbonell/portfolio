@@ -1,46 +1,95 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Project.scss'
+import { Frame, Page } from "framer"
 
-const Project = () => {
+import './Project.scss';
 
+const Project = (props) => {
+    const ghLink = <a href={props.gh} target="new">GitHub</a>;
+    const wireframeUrl = <img className="wireframe" src={props.design} alt="my wireframes" />
     return (
-        <div className="Project">
-            <button className="close">
-                <FontAwesomeIcon icon={['fas', 'times-circle']} size="2x"/>
-            </button>
-            <div className="Project-header">
-                <h1>Killer Kao</h1>
-                <p>A rock-paper-scissors-like fighting game made with pure vanilla JavaScript!</p>
-            </div>
-            <div className="Project-stack">
-                <h3>Stack:</h3>
-                <ul> 
-                    <FontAwesomeIcon className="icon" icon={['fab', 'html5']} size="3x"/>
-                    <FontAwesomeIcon className="icon" icon={['fab', 'css3-alt']} size="3x"/>
-                    <FontAwesomeIcon className="icon" icon={['fab', 'js-square']} size="3x"/>
-                </ul> 
-            </div>
+        <div className="Project subpage-container">
+           <Page 
+                defaultEffect="coverflow" 
+                wheelEnabled="true" 
+                alignment="center" 
+                width="100%" 
+                height="100%" 
+                contentHeight="auto" 
+                direction="vertical">
+                    <Frame 
+                        size="100%" 
+                        width="auto" 
+                        height="100vh" 
+                        background="transparent">
 
-            <div className="Project-role">
-                <h3>Role</h3>
-                <p>Sole designer/developer</p>
-            </div>
+                        <div className="section Project-header">
+                            
+                            <div><h1>{props.title}</h1></div>
+                            
+                            <h3>{props.subtitle}</h3>
+                            <ul>
+                                {(props.gh === undefined) ? '' : ghLink}
+                                <a href={props.demo} target="new">Live Demo</a>
+                            </ul>
+                            <ul>
+                                    {props.stack}
+                            </ul>
 
-            <div className="Project-challenge">
-                <h3>The Challenge:</h3>
-            </div>
-            
-            <div className="Project-wf">
-                <h3>Wireframes/Designs:</h3>
-                <p>wireframes go here</p>
-            </div>
+                    </div>
+                    </Frame>
 
-            <div className="Project-details">
-                <p></p>
-            </div>
-            
-        </div>
+                    <Frame 
+                        size="100%" 
+                        width="auto" 
+                        height="100vh" 
+                        background="transparent">
+                        <div className="section">
+                                <img src={props.preview} alt="project-thumbnail" />
+                        </div>
+                    </Frame>
+
+                    <Frame 
+                        size="100%" 
+                        width="auto" 
+                        height="100vh" 
+                        background="transparent">
+                        <div className="section Project-challenge">
+                            <h2>The Challenge</h2>
+                            <p>{props.challenge}</p>
+                        </div>
+                    </Frame>
+
+                    <Frame
+                         size="100%" 
+                         width="auto" 
+                         height="100%" 
+                         background="transparent">
+                         <div className="section Project-design">
+                             <h2> Design</h2>
+                             <p>
+                                 Wireframes created with &nbsp;
+                                 <FontAwesomeIcon color="#FA6400" 
+                                 className="icon" icon={['fab', 'sketch']} size="lg"/>
+                            </p>
+                            {(props.design === undefined) ? '' : wireframeUrl}
+                        </div>
+                    </Frame>
+
+                    <Frame 
+                        size="100%" 
+                        width="auto" 
+                        height="100%" 
+                        background="transparent">
+                        <div className="section Project-solution">
+                            <h2>The Solution</h2>
+                            <p>{props.solution}</p>
+                        </div>
+                    </Frame>
+                   
+           </Page>
+        </div>    
+
     );
 }
 

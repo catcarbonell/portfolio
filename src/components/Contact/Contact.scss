@@ -1,11 +1,4 @@
-// === DARK MODE ===  //
-
-/* COLORS */
-$dark-body-color: #f0e2fd;
-$dark-link-color: #d3e7f6;
-$dark-link-hover: #ff80ed;
-$dark-bgcolor: #635892;
-$dark-shadow: #534a7a;
+// === VARIABLES === //
 
 /* FONT-SIZE */
 $base-font: 14px;
@@ -19,18 +12,56 @@ $bold: 700;
 $light: 300;
 $regular: 400;
 
+/* FONT-COLOR */
+$dark-body-color: #f0e2fd;
+$dark-link-color: rgb(255,88,249);
+$dark-link-bg: rgba(129,72,178, 0.7);
+$dark-link-hover: #f0e2fd;
+
+/* BACKGROUND-COLOR */
+$dark-bgcolor: #635892;
+$dark-shadow: #534a7a;
+$overlay-bgcolor: rgba(92,51,128, 0.9);
+
+/* BOX-SHADOW */
+$box-shadow: 5px 7px $dark-link-bg;
+$header-shadow: 3px 3px $dark-body-color;
+
 /* BUTTON STYLES */
 $button-radius: 15px;
-$button-bgcolor: rgba(74,66,109, 0.7);
-$button-bgcolor-hover:  rgba(74,66,109, 1);
+$button-bgcolor: rgba(185,103,255, 0.5);
+$button-bgcolor-hover:  rgba(185,103,255, 0.9);
+
+/* TRANSFORMS/TRANSITIONS */
+$transition:  ease-in-out 0.3s;
 
 /* PADDING/MARGIN */
 $padding: 10px;
 $margin-center: 0 auto;
 
 /* BORDER */
-$base-border: 3px solid $dark-body-color;
+$base-border: 2px solid $button-bgcolor;
 $base-border-dark: 4px solid $dark-shadow;
+
+/* ================================================= */
+
+// === MIXINS === //
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-left {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+/* ================================================= */
 
 
 .confirm-modal {
@@ -73,14 +104,15 @@ $base-border-dark: 4px solid $dark-shadow;
             background: transparent;
         }
         a:hover {
-            color: $dark-link-hover;
+            color: $dark-link-color;
+            box-shadow: none;
         }
     }
    
     button:hover {
-        color: $dark-link-hover;
+        color: $dark-link-color;
         background-color: $button-bgcolor-hover;
-        border: 3px solid $dark-link-hover;
+        border: 3px solid $dark-link-color;
         transition: ease-in-out 0.3s;
         transform: scale(1.2);
         cursor: pointer;
@@ -95,7 +127,20 @@ $base-border-dark: 4px solid $dark-shadow;
     }
     label{
         margin-bottom: 7px;
+        font-size: $base-font / 1.1;
+        text-transform: uppercase;
+        font-weight: $bold;
     }
+
+    a:link, a:visited {
+        color: $dark-body-color;
+        background: transparent;
+    }
+    a:hover {
+        color: $dark-link-color;
+        box-shadow: none;
+    }
+
     input{
         display: block;
         width: 90%;
@@ -104,7 +149,7 @@ $base-border-dark: 4px solid $dark-shadow;
         border: $base-border;
         padding: $padding;
         border-radius: $button-radius;
-        background: $dark-shadow;
+        background: $button-bgcolor;
         color: $dark-body-color;
     }
     input::placeholder{
@@ -120,7 +165,7 @@ $base-border-dark: 4px solid $dark-shadow;
         border-radius: $button-radius;
         padding: $padding;
         border: $base-border;
-        background: $dark-shadow;
+        background: $button-bgcolor;
         color: $dark-body-color;
     }
     button {
@@ -136,13 +181,6 @@ $base-border-dark: 4px solid $dark-shadow;
         border: 3px solid $button-bgcolor;
         box-shadow: 5px 5px $button-bgcolor-hover;
         transition: ease-in-out 0.3s;
-    }
-    a:link, a:visited {
-        color: $dark-body-color;
-        background: transparent;
-    }
-    a:hover {
-        color: $dark-link-hover;
     }
 
     button:hover {
