@@ -18,7 +18,7 @@ const KillerKao = () => {
                         Create a game from scratch using vanilla JavaScript, 
                         HTML, and CSS in one week, adhering to these requirements:
                     </p>
-                    <ul>
+                    <ul className="Project-requirements">
                         <li>Render a game in the browser</li>
                         <li>
                             Switch turns between two players

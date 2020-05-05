@@ -18,15 +18,12 @@ const About = () => {
                         <article>
                         <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
                             <p>
-                                I started web slinging during the Geocities/Myspace/Neopets/Livejournal days, 
-                                but I never considered pursuing it as a career; in the 90s and early 00s, it was unheard of--
-                                at least to my elementary school-kid ears. 
+                                Back in the good-ol' Geocities/Myspace/Neopets days, <br />
+                                back when webrings were a thing and 16-bit pixel dolls littered "personal homepages", <br />
+                                I was that kid you'd ask to style your Xanga, and I'd charge you $5 or lunch.
                             </p>
                             <p>
-                                Plus, if you wanted to work with computers, you had to be good at math-- or so I believed.
-                            </p>
-                            <p>
-                            TL;DR: A few career changes later, here I am now, making web apps function and look pretty.
+                                ... I knew I should've charged more.
                             </p>
                         </article>
                     </div>

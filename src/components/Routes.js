@@ -9,6 +9,7 @@ import About from './About';
 import Contact from './Contact';
 import Project from './Project';
 import KillerKao from './Project/KillerKao';
+import Popop from './Project/Popop';
 
 const Routes = () => {
     return (
@@ -18,6 +19,7 @@ const Routes = () => {
             <Route path="/projects"> <Projects /> </Route>
             <Route path="/project"> <Project /> </Route>
             <Route path="/killerkao"> <KillerKao /> </Route>
+            <Route path="/popop"> <Popop /> </Route>
             <Route path="/contact"> <Contact /> </Route>
            
         </Switch>

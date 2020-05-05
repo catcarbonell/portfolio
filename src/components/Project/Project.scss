@@ -90,6 +90,7 @@ $transition:  ease-in-out 0.3s;
     }
     .Project-header{
         @include flex-center();
+        cursor: s-resize;
         margin-top: 3rem;
         h1 {
             box-shadow: none;
@@ -106,8 +107,18 @@ $transition:  ease-in-out 0.3s;
 
 
     }
+    .Project-requirements{
+        margin-left: 4em;
+    }
+
     .Project-design{
         margin-top: 5rem;
+        img {
+            width: 60%;
+        }
+    }
+    .Project-solution{
+        cursor: n-resize;
     }
 
 }

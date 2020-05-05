@@ -18,6 +18,7 @@ const Projects = () => {
             <section>
                 <h1>Projects</h1>
                 <article className="Project-container">
+
                     <ProjectItem 
                         title="Killer Kao"
                         thumbnail={killerkao}
@@ -28,15 +29,18 @@ const Projects = () => {
                         gh="https://github.com/catcarbonell/killerkao"
                         demo="https://catcarbonell.github.io/killerkao/"
                         />
+
                     <ProjectItem 
                         title="POPOP JS"
                         thumbnail={popop}
                         alt="Landing screenshot of my project PopopJS"
                         stack={js}
+                        project="/popop"
                         description="A tiny, easily-customizable vanilla JavaScript modal framework / package!"
                         gh="https://github.com/catcarbonell/popop"
                         demo="https://catcarbonell.github.io/popop/"
                         />
+
                     <ProjectItem 
                         title="thx 4 the memeries"
                         thumbnail={thx4thememeries}
@@ -46,6 +50,7 @@ const Projects = () => {
                         gh="https://github.com/catcarbonell/thx4memeries"
                         demo="https://catcarbonell.github.io/thx4memeries/"
                         />
+                        
                     <ProjectItem 
                         title="Pikatsume" 
                         thumbnail={pikatsume}
