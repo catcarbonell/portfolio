@@ -10,6 +10,8 @@ import Contact from './Contact';
 import Project from './Project';
 import KillerKao from './Project/KillerKao';
 import Popop from './Project/Popop';
+import Thx4memeries from './Project/Thx4memeries';
+import Pikatsume from './Project/Pikatsume';
 
 const Routes = () => {
     return (
@@ -20,6 +22,8 @@ const Routes = () => {
             <Route path="/project"> <Project /> </Route>
             <Route path="/killerkao"> <KillerKao /> </Route>
             <Route path="/popop"> <Popop /> </Route>
+            <Route path="/thx4memeries"> <Thx4memeries /> </Route>
+            <Route path="/pikatsume"> <Pikatsume /> </Route>
             <Route path="/contact"> <Contact /> </Route>
            
         </Switch>

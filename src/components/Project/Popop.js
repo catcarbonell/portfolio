@@ -15,7 +15,7 @@ const Popop = () => {
             challenge={
                 <>
                     <p> 
-                        Create an easy-to-install and customize  modular modal plugin that's easily customizable, especially for code newbies/bootcampers.
+                        Create a simple, modular modal plugin that's easily customizable, especially for code newbies/bootcampers.
                     </p>
                 </>
             }
@@ -30,7 +30,9 @@ const Popop = () => {
             <>
                 <p>
                     During our first project presentations, I kept hearing my
-                    classmates say, "I needed a modal, but I didn't like the 
+                    classmates say,
+                    <br />
+                    "I needed a modal, but I didn't like the 
                     way (framework) did theirs, so I made my own."
                 </p>
                 <p>

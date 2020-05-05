@@ -22,10 +22,10 @@ const Projects = () => {
                     <ProjectItem 
                         title="Killer Kao"
                         thumbnail={killerkao}
+                        project="/killerkao"
                         alt="Landing screenshot of my project Killer Kao"  
                         description="A rock-paper-scissors-like fighting game made with pure vanilla JavaScript!"
                         stack={js}
-                        project="/killerkao"
                         gh="https://github.com/catcarbonell/killerkao"
                         demo="https://catcarbonell.github.io/killerkao/"
                         />
@@ -33,9 +33,9 @@ const Projects = () => {
                     <ProjectItem 
                         title="POPOP JS"
                         thumbnail={popop}
+                        project="/popop"
                         alt="Landing screenshot of my project PopopJS"
                         stack={js}
-                        project="/popop"
                         description="A tiny, easily-customizable vanilla JavaScript modal framework / package!"
                         gh="https://github.com/catcarbonell/popop"
                         demo="https://catcarbonell.github.io/popop/"
@@ -44,6 +44,7 @@ const Projects = () => {
                     <ProjectItem 
                         title="thx 4 the memeries"
                         thumbnail={thx4thememeries}
+                        project="/thx4memeries"
                         alt="Landing screenshot of my project thanks for the meme-ries"
                         stack={js}
                         description="A JavaScript + jQuery + AJAX-based gif search engine implementing the GIPHY API!"
@@ -54,6 +55,7 @@ const Projects = () => {
                     <ProjectItem 
                         title="Pikatsume" 
                         thumbnail={pikatsume}
+                        project="/pikatsume"
                         alt="Landing screenshot of my Python project Pikatsume"
                         description="A gatcha game for those who love Pikachu!  
                         Made with Django, JavaScript, Bulma and the Stripe API!"

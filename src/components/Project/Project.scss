@@ -120,5 +120,35 @@ $transition:  ease-in-out 0.3s;
     .Project-solution{
         cursor: n-resize;
     }
+    .Project-team {
+        @include flex-center();
+        margin-top: 0;
+        text-align: center;
+        
+        article {
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: row;
 
+            .team-tile {
+                width: 250px;
+                margin: 0 1em; 
+                display: flex;
+                flex-flow: column;
+                img {
+                    border-radius: 200px;
+                    width: 75%;
+                    box-shadow: 5px 3px 9px rgba(0,0,0,0.5);
+                    margin: 0 auto;
+                    opacity: 0.8;
+                }
+                ul {
+                    margin-top: 0;
+                }
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }

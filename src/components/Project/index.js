@@ -6,7 +6,21 @@ import './Project.scss';
 
 const Project = (props) => {
     const ghLink = <a href={props.gh} target="new">GitHub</a>;
-    // const wireframeUrl = <img className="wireframe" src={props.design} alt="my wireframes" />
+    const team =   
+        <Frame 
+            size="100%" 
+            width="auto" 
+            height="100vh" 
+            background="transparent">
+            <div className="section Project-team">
+                <div>
+                    <h2>The Team</h2>
+                </div>
+                <article>
+                    {props.team}
+                </article>
+            </div>
+        </Frame>;
     return (
         <div className="Project subpage-container">
            <Page 
@@ -36,7 +50,7 @@ const Project = (props) => {
                                     {props.stack}
                             </ul>
 
-                    </div>
+                        </div>
                     </Frame>
 
                     <Frame 
@@ -49,6 +63,8 @@ const Project = (props) => {
                         </div>
                     </Frame>
 
+                    {(props.team === undefined) ? '' : team}
+
                     <Frame 
                         size="100%" 
                         width="auto" 
@@ -60,29 +76,13 @@ const Project = (props) => {
                         </div>
                     </Frame>
 
-                    {/* <Frame
-                         size="100%" 
-                         width="auto" 
-                         height="100%" 
-                         background="transparent">
-                         <div className="section Project-design">
-                             <h2> Design</h2>
-                             <p>
-                                 Wireframes created with &nbsp;
-                                 <FontAwesomeIcon color="#FA6400" 
-                                 className="icon" icon={['fab', 'sketch']} size="lg"/>
-                            </p>
-                            {(props.design === undefined) ? '' : wireframeUrl}
-                        </div>
-                    </Frame> */}
-
                     <Frame 
                         size="100%" 
                         width="auto" 
                         height="100%" 
                         background="transparent">
                         <div className="section Project-solution">
-                            <h2>The Solution</h2>
+                            <h2>The Process</h2>
                             {props.solution}
                         </div>
                     </Frame>
