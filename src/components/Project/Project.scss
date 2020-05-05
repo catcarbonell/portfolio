@@ -152,3 +152,21 @@ $transition:  ease-in-out 0.3s;
         }
     }
 }
+
+@media only screen and (max-width: 650px) {
+   .Project{
+       .Project-team {
+            article {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                .team-tile {
+                    width: 40%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+
+}
