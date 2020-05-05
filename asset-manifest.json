@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e3d8ef14.chunk.css",
-    "main.js": "/portfolio/static/js/main.a02ba473.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a02ba473.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.82abde18.chunk.css",
+    "main.js": "/portfolio/static/js/main.8dec417e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8dec417e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
-    "static/js/2.76ce3486.chunk.js": "/portfolio/static/js/2.76ce3486.chunk.js",
-    "static/js/2.76ce3486.chunk.js.map": "/portfolio/static/js/2.76ce3486.chunk.js.map",
+    "static/js/2.35627d86.chunk.js": "/portfolio/static/js/2.35627d86.chunk.js",
+    "static/js/2.35627d86.chunk.js.map": "/portfolio/static/js/2.35627d86.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.8e87e6ee7078a33a1ecb800d47e45b05.js": "/portfolio/precache-manifest.8e87e6ee7078a33a1ecb800d47e45b05.js",
+    "precache-manifest.ef6804cab9302c36e422937144740dc2.js": "/portfolio/precache-manifest.ef6804cab9302c36e422937144740dc2.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.e3d8ef14.chunk.css.map": "/portfolio/static/css/main.e3d8ef14.chunk.css.map",
-    "static/js/2.76ce3486.chunk.js.LICENSE.txt": "/portfolio/static/js/2.76ce3486.chunk.js.LICENSE.txt",
+    "static/css/main.82abde18.chunk.css.map": "/portfolio/static/css/main.82abde18.chunk.css.map",
+    "static/js/2.35627d86.chunk.js.LICENSE.txt": "/portfolio/static/js/2.35627d86.chunk.js.LICENSE.txt",
     "static/media/headshot.jpg": "/portfolio/static/media/headshot.8df96dbd.jpg",
+    "static/media/jacob.jpg": "/portfolio/static/media/jacob.55aadbc3.jpg",
+    "static/media/johnson.png": "/portfolio/static/media/johnson.7ebd0bb6.png",
     "static/media/DarkModeApp.scss": "/portfolio/static/media/keyboardbg.520ca82a.jpg",
     "static/media/killerkao.png": "/portfolio/static/media/killerkao.50ed0e0d.png",
     "static/media/passport.png": "/portfolio/static/media/passport.d02ce5ce.png",
@@ -22,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
-    "static/js/2.76ce3486.chunk.js",
-    "static/css/main.e3d8ef14.chunk.css",
-    "static/js/main.a02ba473.chunk.js"
+    "static/js/2.35627d86.chunk.js",
+    "static/css/main.82abde18.chunk.css",
+    "static/js/main.8dec417e.chunk.js"
   ]
 }
