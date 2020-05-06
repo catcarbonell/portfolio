@@ -1,6 +1,7 @@
 import React from 'react';
 import { Frame, Page } from "framer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Emoji from '../Emoji';
 import Passport from '../../assets/passport.png';
 import '../../styles/Subpages.scss';
 import './About.scss';
@@ -30,6 +31,7 @@ const About = () => {
             </Frame>
             <Frame size="100%" width="auto" height="100vh" background="transparent">
                 <div className="section">
+                <div><h2>Portfolio</h2></div>
                 <p>
                     This portfolio was made with <FontAwesomeIcon color="#f786f6" icon={['fas', 'heart']} size="lg" />
                     <br />
@@ -50,32 +52,32 @@ const About = () => {
 
             <Frame width="auto" height="100vh" background="transparent">
                 <div className="section">
-                    <h2>Currently</h2>
+                    <div><h2>Currently</h2></div>
                     <article>
                     <h3>As of 4/26/2020:</h3>
                     </article>
                     <article>
                         <div>
-                            <span>
-                                <FontAwesomeIcon icon={['fas', 'map-marker-alt']} size="lg"/>
+                            <span> 
+                                <Emoji symbol="📍" label="a pin" />
                                 &nbsp;&nbsp; San Francisco, Bay Area, CA
                             </span>
                         </div>
                         <div>
                             <span>
-                                <FontAwesomeIcon icon={['fas', 'book']} size="lg"/>
+                                <Emoji symbol="📚" label="a pile of books" />
                                 &nbsp;&nbsp; Studying React and Algorithms
                             </span>
                         </div>
                         <div>
                             <span>
-                                <FontAwesomeIcon icon={['fas', 'gamepad']} size="lg"/>
+                                <Emoji symbol="🎮" label="game controller" />
                                 &nbsp;&nbsp; Animal Crossing: New Horizons
                             </span>
                         </div>
                         <div>
                             <span>
-                                <FontAwesomeIcon icon={['fas', 'building']} size="lg"/>
+                                <Emoji symbol="🏢" label="office building" />
                                 &nbsp;&nbsp; Available for new opportunities!
                             </span>
                         </div>
