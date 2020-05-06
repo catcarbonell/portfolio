@@ -1,7 +1,7 @@
 import React  from 'react';
 import { Link } from 'react-router-dom';
 import { Frame } from 'framer';
-import 'framer-motion';
+import {motion} from 'framer-motion';
 import Emoji from '../Emoji';
 import LandingNav from './LandingNav';
 import headshot from '../../assets/headshot.jpg';
@@ -34,6 +34,28 @@ const Landing = () => {
             },
         },
     }
+    const list = {
+        
+        visible: {
+            opacity: 1,
+            transition: {
+                when: "beforeChildren",
+                staggerChildren: 0.3,
+            },
+        },
+        hidden: {
+            opacity: 0,
+            transition: {
+                when: "afterChildren",
+            },
+        },
+    }
+    const item = {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -100 },
+      }
+      
+
     const intro = Array.from("Hi! I'm Cat!");
     return (
         <div className="center-content both">
@@ -73,12 +95,33 @@ const Landing = () => {
                             </Frame>
                         ))}
                     </Frame> 
-                    <div className="landing-description">
-                        <p className="subtitle"> <Emoji symbol="💻" label="a laptop computer" /> I <Link to="/projects">design and build</Link> web apps!</p>
-                        <p className="subtitle"> <Emoji symbol="✍🏾" label="a tan hand writing with a pen" /> &amp; write newbie-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!</p>
-                        <p className="subtitle"> <Emoji symbol="📺" label="a tan hand writing with a pen" /> &amp; 
-                        <a href="https://twitch.tv/catvscode" target="new">stream</a> my attempts at coding challenges on <a href="https://twitch.tv/catvscode" target="new">Twitch</a>! </p>
-                    </div>
+                    <motion.div   
+                            initial="hidden"
+                            animate="visible"
+                            variants={list} 
+                            className="landing-description"> 
+                        <motion.p
+                            variants={item} 
+                            className="subtitle"
+                            >
+                            <Emoji symbol="💻" label="a laptop computer" /> 
+                            I <Link to="/projects">design and build</Link> web apps!
+                        </motion.p>
+                        <motion.p 
+                            className="subtitle"
+                            variants={item}
+                            > 
+                            <Emoji symbol="✍🏾" label="a tan hand writing with a pen" /> &amp; write newbie-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!
+                        </motion.p>
+                        <motion.p 
+                            className="subtitle"
+                            variants={item}
+                            > 
+                            <Emoji symbol="📺" label="a tan hand writing with a pen" /> &amp; 
+                            <a href="https://twitch.tv/catvscode" target="new">stream</a> my attempts at coding challenges on <a href="https://twitch.tv/catvscode" target="new">Twitch</a>! 
+                        </motion.p>
+                    </motion.div>
+
 
                     <LandingNav />
 
