@@ -75,8 +75,9 @@ $transition:  ease-in-out 0.3s;
 .landing-header {
     display: flex;
     justify-content: flex-start;
-    a{
-        margin: 0 10px 0 5px;
+   
+    p {
+        margin-top: 10px;
     }
     h1 {
         font-size: $base-font * 2.7;
@@ -89,6 +90,10 @@ $transition:  ease-in-out 0.3s;
         font-family: $hfont;
         font-weight: $regular;
     }
+    .title {
+        display: flex;
+        justify-content: flex-start;
+    }
     .subtitle {
         font-size: $base-font * 1.1;
         font-family: $bfont;
@@ -98,7 +103,7 @@ $transition:  ease-in-out 0.3s;
         }
     }
     .landing-description{
-        margin: 2.3rem auto 1.5rem 1.2rem;
+        margin: 2.3rem auto 1.5rem auto;
     }
 }
 
@@ -156,14 +161,14 @@ $transition:  ease-in-out 0.3s;
         .profile-img-container {
             display: inline-block;
             padding: 0;
-            margin: 0;
+            margin: 0 auto 1.3rem auto;
             width: 60%;
         }
         .profile-img {
             width: 25%;
         }
         .landing-description {
-            margin: 0;
+            margin: 2.5rem 0 0 0;
             padding: 0;
             a {
                 margin: 0;
@@ -172,9 +177,10 @@ $transition:  ease-in-out 0.3s;
         }
     }
     .landing-menu {
-        margin: 20px auto 0 auto;
+        margin: 1.5em auto 0 auto;
         button {
-            padding: 10px 15px;
+            border-radius: 10px;
+            padding: 5px;
             width: 25%;
         }
     }
@@ -186,6 +192,12 @@ $transition:  ease-in-out 0.3s;
     }
     .landing-header{
         h1 {
+            font-size: $base-font * 2;
+            font-family: $hfont;
+            font-weight: $bold;
+        }
+        .title {
+            width: 50%;
             font-size: $base-font * 2;
             font-family: $hfont;
             font-weight: $bold;
