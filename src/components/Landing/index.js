@@ -105,7 +105,7 @@ const Landing = () => {
                             className="subtitle"
                             >
                             <Emoji symbol="💻" label="a laptop computer" /> 
-                            I <Link to="/projects">design and build</Link> web apps!
+                            &nbsp; I <Link to="/projects">design and build</Link> web apps!
                         </motion.p>
                         <motion.p 
                             className="subtitle"

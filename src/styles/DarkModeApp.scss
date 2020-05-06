@@ -141,8 +141,9 @@ a:link, a:visited {
   }
   .center-container {
     // border: 1px solid chartreuse;
+    box-sizing: border-box;
     position: relative;
-    width: 95%;
+    width: 75vw;
     height: 95vh;
     min-height: calc(95vh - 200px);
     margin: 20px auto;

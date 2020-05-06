@@ -57,25 +57,21 @@ $transition:  ease-in-out 0.3s;
 // === ATTRIBUTE STYLES === //
 .profile-img-container {
     // border: 1px solid sandybrown;
-    width: 30%;
-    margin: 20px;
+    width: 25%;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 2rem;
+    @include flex-center();
     .profile-img {
+        // border: 1px solid chartreuse;
         border-radius: 200px;
-        width: 90%;
+        width: 100%;
         box-shadow: 5px 3px 9px rgba(0,0,0,0.5);
-        margin: 0 auto;
-        opacity: 0.8;
     }
 }
 
 .landing-header {
     display: flex;
     justify-content: flex-start;
-   
     p {
         margin-top: 10px;
     }
@@ -152,7 +148,7 @@ $transition:  ease-in-out 0.3s;
             font-size: $base-font * 2.5;
         }
         .subtitle {
-            font-size: $base-font * 1.3;
+            font-size: $base-font;
         }
         .center-content {
             width: 65%;
@@ -161,11 +157,11 @@ $transition:  ease-in-out 0.3s;
         .profile-img-container {
             display: inline-block;
             padding: 0;
-            margin: 0 auto 1.3rem auto;
-            width: 60%;
+            margin-bottom: 2rem;
+            width: 50%;
         }
         .profile-img {
-            width: 25%;
+            width: 50%;
         }
         .landing-description {
             margin: 2.5rem 0 0 0;
@@ -207,7 +203,6 @@ $transition:  ease-in-out 0.3s;
         }
         .profile-img {
             width: 75%;
-            margin: 0;
         }
     }
   
