@@ -31,9 +31,9 @@ const About = () => {
             </Frame>
             <Frame size="100%" width="auto" height="100vh" background="transparent">
                 <div className="section">
-                <div><h2>Portfolio</h2></div>
+                <div><h2>Site</h2></div>
                 <p>
-                    This portfolio was made with <FontAwesomeIcon color="#f786f6" icon={['fas', 'heart']} size="lg" />
+                    This site was made with <FontAwesomeIcon color="#f786f6" icon={['fas', 'heart']} size="lg" />
                     <br />
                     ...and some blood... 
                     <br />
