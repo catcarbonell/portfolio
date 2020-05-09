@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
 import Emoji from '../Emoji';
 import Socials from '../Socials';
@@ -18,7 +19,10 @@ const Contact = () => {
       }
     
     const [ displayConfirm, toggleConfirm ] = useState(false);
-    
+    const variants = {
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: -100},
+      }
     
     return(
         <>
@@ -38,9 +42,14 @@ const Contact = () => {
                 </div>
             </div>
         }
-        <div className="Contact subpage-container">
+        <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={0.3}
+            className="Contact subpage-container">
             <div className="section Contact-header">
-               <div> <h1>Contact</h1></div>
+               <div><h1>Contact</h1></div>
                 <article>
                     <h3>Social Media</h3>
                     <Socials />
@@ -67,7 +76,7 @@ const Contact = () => {
                     </form>
                 </article>
             </div>
-        </div>
+        </motion.div>
         </>
     );
 };

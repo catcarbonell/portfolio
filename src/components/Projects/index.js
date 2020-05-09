@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import killerkao from '../../assets/thumbnails/killerkao.png';
 import popop from '../../assets/thumbnails/popop.png';
@@ -12,9 +13,18 @@ import './Projects.scss';
 const Projects = () => {
     const js = <span className="icon"><FontAwesomeIcon icon={['fab', 'js-square']} size="2x"/></span>;
     const python =  <span className="icon"><FontAwesomeIcon icon={['fab', 'python']} size="2x"/></span>;
- 
+    const variants = {
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: -100},
+      }
     return(
-        <div className="subpage-container Projects">
+        <motion.div 
+            className="subpage-container Projects"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={0.3}
+            >
             <section>
                 <h1>Projects</h1>
                 <article className="Project-container">
@@ -68,7 +78,7 @@ const Projects = () => {
                 </article>
             </section>
           
-        </div>
+        </motion.div>
     );
 };
 

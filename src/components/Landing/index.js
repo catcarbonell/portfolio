@@ -10,6 +10,10 @@ import './Landing.scss';
 
 
 const Landing = () => {
+    const variants = {
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
+      }
     const containerVariants = {
         before: {},
         after: { transition: { staggerChildren: 0.06 } },
@@ -58,7 +62,12 @@ const Landing = () => {
 
     const intro = Array.from("Hi! I'm Cat!");
     return (
-        <div className="center-content both">
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={0.2} 
+            className="center-content both">
             <div className="landing-header">
                 <div className="profile-img-container">
                     <img src={headshot} className="profile-img" alt="my face" />
@@ -127,7 +136,7 @@ const Landing = () => {
 
                 </div>
             </div> 
-        </div>
+        </motion.div>
     );
 };
 

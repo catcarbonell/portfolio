@@ -21,8 +21,8 @@ const LandingNav = () => {
         },
     }
     const item = {
-        visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: -100 },
       }
     return (
         <motion.div 
@@ -30,15 +30,18 @@ const LandingNav = () => {
             animate="visible"
             variants={list} 
             className="landing-menu">
-            <button>
+            <motion.button
+                 variants={item} >
                 <Link to="/projects">Projects</Link>
-            </button>
-            <button>
+            </motion.button>
+            <motion.button
+                 variants={item}>
                 <Link to="/about">About</Link>
-            </button>
-            <button>
+            </motion.button>
+            <motion.button
+                 variants={item}>
                 <Link to="/contact">Contact</Link>
-            </button>
+            </motion.button>
         </motion.div>
     );
 }

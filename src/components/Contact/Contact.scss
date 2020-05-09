@@ -120,8 +120,8 @@ $base-border-dark: 4px solid $dark-shadow;
 }
 
 .Contact {
-    div{
-        margin: 20px auto;
+    div {
+        margin: 10px auto;
         display: flex;
         flex-direction: column;
     }
@@ -131,7 +131,6 @@ $base-border-dark: 4px solid $dark-shadow;
         text-transform: uppercase;
         font-weight: $bold;
     }
-
     a:link, a:visited {
         color: $dark-body-color;
         background: transparent;

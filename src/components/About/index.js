@@ -7,9 +7,18 @@ import '../../styles/Subpages.scss';
 import './About.scss';
 
 const About = () => {
+
     return(
-        <div className="About subpage-container">
-        <Page defaultEffect="coverflow" wheelEnabled="true" alignment="center" width="100%" height="100%" contentHeight="auto" direction="vertical">
+
+        <Page  
+            className="About subpage-container" 
+            defaultEffect="coverflow" 
+            wheelEnabled="true" 
+            alignment="center" 
+            width="100%" 
+            height="100%" 
+            contentHeight="auto" 
+            direction="vertical">
   
             <Frame size="100%" width="auto" height="100vh" background="transparent">
                     <div className="section">
@@ -166,7 +175,7 @@ const About = () => {
             </Frame>
 
         </Page>
-        </div>
+
     );
 };
 
