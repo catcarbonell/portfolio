@@ -1,5 +1,6 @@
 import React from 'react';
 import { Frame, Page } from "framer";
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Emoji from '../Emoji';
 import Passport from '../../assets/passport.png';
@@ -7,7 +8,10 @@ import '../../styles/Subpages.scss';
 import './About.scss';
 
 const About = () => {
-
+    const variants = {
+        hidden: { opacity: 0, y: -100},
+        visible: {opacity: 1, y: 1}
+    }
     return(
 
         <Page  
@@ -21,7 +25,12 @@ const About = () => {
             direction="vertical">
   
             <Frame size="100%" width="auto" height="100vh" background="transparent">
-                    <div className="section">
+                    <motion.div 
+                        initial="hidden"
+                        animate="visible"
+                        variants={variants}
+                        transition={0.3}
+                        className="section">
                         <div>
                             <h1> About </h1>
                         </div>
@@ -36,7 +45,7 @@ const About = () => {
                                 ... I knew I should've charged more.
                             </p>
                         </article>
-                    </div>
+                    </motion.div>
             </Frame>
             <Frame size="100%" width="auto" height="100vh" background="transparent">
                 <div className="section">
