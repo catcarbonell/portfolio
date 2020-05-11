@@ -47,3 +47,6 @@ amplifyxc.config
 ### Firebase Patch ###
 .runtimeconfig.json
 .firebase/
+
+# Local Netlify folder
+.netlify
