@@ -12,9 +12,6 @@ const Socials = () => {
                  <a href="http://twitter.com/catcarbn" target="new">
                      <FontAwesomeIcon icon={['fab', 'twitter']} size="2x"/>
                 </a>
-                <a href="http://instagram.com/catcarbn" target="new">
-                    <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
-                </a>
                 <a href="http://linkedin.com/in/catcarbonell" target="new">
                     <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
                 </a>
