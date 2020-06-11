@@ -7,7 +7,7 @@ import './Project.scss';
 const Thx4memeries = () => {
     return(
         <Project
-            title="Thx 4 the Memeries"
+            title="Thx4the Memeries"
             subtitle="A JavaScript + jQuery + AJAX-based gif search engine implementing the GIPHY API!"
             gh="https://github.com/catcarbonell/thx4memeries"
             demo="https://catcarbonell.github.io/thx4memeries"

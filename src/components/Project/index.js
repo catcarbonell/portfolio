@@ -36,7 +36,6 @@ const Project = (props) => {
                         width="auto" 
                         height="100vh" 
                         background="transparent">
-
                         <div className="section Project-header">
                             
                             <div><h1>{props.title}</h1></div>

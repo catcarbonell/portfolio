@@ -52,7 +52,7 @@ const Projects = () => {
                         />
 
                     <ProjectItem 
-                        title="thx 4 the memeries"
+                        title="thx4the memeries"
                         thumbnail={thx4thememeries}
                         project="/thx4memeries"
                         alt="Landing screenshot of my project thanks for the meme-ries"
