@@ -120,7 +120,7 @@ const Landing = () => {
                             className="subtitle"
                             variants={item}
                             > 
-                            <Emoji symbol="✍🏾" label="a tan hand writing with a pen" /> &amp; write newbie-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!
+                            <Emoji symbol="✏️" label="a pencil" /> &amp; write newbie-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!
                         </motion.p>
                         <motion.p 
                             className="subtitle"
