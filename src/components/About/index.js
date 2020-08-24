@@ -2,7 +2,6 @@ import React from 'react';
 import { Frame, Page } from "framer";
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Passport from '../../assets/passport.png';
 import '../../styles/Subpages.scss';
 import './About.scss';
 
@@ -36,7 +35,7 @@ const About = () => {
                         <article>
                             <p>
                                 From the days of indie web designers of the late 90's to early 00's,
-                                Back during the good ol' days of Geocities, Myspace, and 16-bit pixel dolls
+                                Back during the good ol' days of Geocities, Myspace, and 16-bit pixel dolls,
                                 I have provided netizens with top-notch logos and graphics cobbled together in Photoshop
                                 and blog layouts, topped with trailing stars chasing your cursor.
                             </p>

@@ -80,6 +80,7 @@ $transition:  ease-in-out 0.3s;
         font-family: $hfont;
         font-weight: $bold;
         line-height: $base-font * 2 ;
+        margin-bottom: 1.3rem;
     }
     h2 {
         font-size: $base-font * 2;
@@ -89,6 +90,7 @@ $transition:  ease-in-out 0.3s;
     .title {
         display: flex;
         justify-content: flex-start;
+        margin-bottom: 1.3rem;
     }
     .subtitle {
         font-size: $base-font * 1.1;
@@ -99,7 +101,7 @@ $transition:  ease-in-out 0.3s;
         }
     }
     .landing-description{
-        margin: 2.3rem auto 1.5rem auto;
+        margin: 2.5rem auto 1.5rem auto;
     }
     .emphasis {
         font-family: $hfont;
@@ -114,6 +116,7 @@ $transition:  ease-in-out 0.3s;
             color: $dark-link-hover;
             box-shadow: 3px 2px $dark-body-color;
             transition: ease-in-out 0.3s;
+            cursor: default;
         }
     }
 }
@@ -122,33 +125,32 @@ $transition:  ease-in-out 0.3s;
     // border: 1px solid yellow;
     button {
         font-size: $base-font;
-        font-family: $bfont;
+        font-family: $hfont;
         font-weight: $bold;
+        width: 100px;
         padding: 10px;
-        margin: 10px 15px 10px 0;
-        border-radius: $button-radius;
+        margin: auto;
         color: $dark-body-color;
         background-color: $button-bgcolor;
         border: 3px solid $button-bgcolor;
+        border-radius: $button-radius;
         box-shadow: 3px 3px $dark-link-bg;
         transition: ease-in-out 0.3s;
         text-transform: uppercase;
         &:hover {
-            background-color: $button-bgcolor-hover;
+            background-color: $dark-link-color;
             border: 3px solid $dark-link-color;
             box-shadow: none;
+            color: #fff;
             transition: ease-in-out 0.3s;
             transform: scale(1.2);
             cursor: pointer;
         }
-        a:link, a:visited {
-            color: $dark-body-color;
-            background: transparent;
-        }
-        a:hover {
-            color: $dark-link-color;
-            box-shadow: none;
-        }
+    }
+    a:link, a:visited, a:hover {
+        background: none;
+        visibility: none;
+        box-shadow: none;
     }
 }
 

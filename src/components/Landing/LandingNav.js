@@ -30,18 +30,15 @@ const LandingNav = () => {
             animate="visible"
             variants={list} 
             className="landing-menu">
-            <motion.button
-                 variants={item} >
-                <Link to="/projects">Projects</Link>
-            </motion.button>
-            <motion.button
-                 variants={item}>
-                <Link to="/about">About</Link>
-            </motion.button>
-            <motion.button
-                 variants={item}>
-                <Link to="/contact">Contact</Link>
-            </motion.button>
+             <Link to="/projects">
+                 <motion.button variants={item}>Projects</motion.button>
+            </Link>
+            <Link to="/about">
+                <motion.button variants={item}>About</motion.button>
+            </Link>
+            <Link to="/contact">
+                <motion.button variants={item}>Contact</motion.button>
+            </Link>
         </motion.div>
     );
 }

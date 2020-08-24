@@ -121,7 +121,7 @@ const Landing = () => {
                         <motion.p
                             className="subtitle"
                             variants={item}>
-                            development all in one go!
+                            <span className="emphasis">development</span> all at once!
                         </motion.p>
                     </motion.div>
 
