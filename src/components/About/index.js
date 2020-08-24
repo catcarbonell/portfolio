@@ -34,16 +34,22 @@ const About = () => {
                             <h1> About </h1>
                         </div>
                         <article>
-                        <img className="cover-img" src={Passport} alt="Animal Crossing Passport" />
                             <p>
-                                Back in the good-ol' Geocities/Myspace/Neopets days, <br />
-                                back when webrings were a thing and 16-bit pixel dolls littered "personal homepages", <br />
-                                I was that kid you'd ask to style your Xanga, and I'd charge you $5 or lunch.
+                                From the days of indie web designers of the late 90's to early 00's,
+                                Back during the good ol' days of Geocities, Myspace, and 16-bit pixel dolls
+                                I have provided netizens with top-notch logos and graphics cobbled together in Photoshop
+                                and blog layouts, topped with trailing stars chasing your cursor.
                             </p>
                             <p>
-                                ... I knew I should've charged more.
+                                My UX design and UI engineering skills and sensibilities have been more refined as of late,
+                                as I perfect the mystic arts of <a href="https://reactjs.org" target="new">ReactJS</a>, 
+                                and wizardry of <a href="https://framer.com/api">Framer</a>. 
                             </p>
-                        </article>
+                            <p>
+                                I am also adept at rapidly crafting ecommerce fronts using <a href="https://shopify.com" target="new">Shopify</a> as a Shopify Partner
+                                and personal/business landing pages on <a href="https://">Webflow</a>.     
+                            </p>
+                               </article>
                     </motion.div>
             </Frame>
 
@@ -84,6 +90,14 @@ const About = () => {
                 <div className="section">
                     <h2>Experience</h2>
                     <article>
+                        <h3>Freelance</h3>
+                        <article>
+                            <p>UX Designer / UI Developer + Consultant</p>
+                            <p>January 2013 - current</p>
+                        </article>
+                    </article>
+                    <article></article>
+                    <article>
                         <h3>egghead.io</h3>
                         <article>
                             <p>Learner Advocate</p>
@@ -111,13 +125,6 @@ const About = () => {
             <Frame width="auto" height="100%" background="transparent">
                 <div className="section">
                     <h2>Education</h2>
-                    <article>
-                        <h3>Udacity</h3>
-                        <article>
-                            <p>React Nanodegree Program</p>
-                            <p>April 2020 - current</p>
-                        </article>
-                    </article>
                     <article>
                         <h3>General Assembly</h3>
                         <article>
@@ -151,6 +158,9 @@ const About = () => {
                     <FontAwesomeIcon color="#61DBFB" icon={['fab', 'react']} size="2x" /> , 
                     &nbsp; and &nbsp; 
                     <FontAwesomeIcon color="#f786be" icon={['fab', 'sass']} size="2x"/> .
+                </p>
+                <p>
+                    But seriously, this was all coded from scratch.
                 </p>
                 </div>
             </Frame>

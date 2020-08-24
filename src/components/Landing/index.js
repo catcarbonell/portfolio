@@ -1,5 +1,4 @@
 import React  from 'react';
-import { Link } from 'react-router-dom';
 import { Frame } from 'framer';
 import {motion} from 'framer-motion';
 import Emoji from '../Emoji';
@@ -112,21 +111,19 @@ const Landing = () => {
                         <motion.p
                             variants={item} 
                             className="subtitle">
-                            I can <Emoji symbol="⚡" label="lightning bolt icon" />speed up<Emoji symbol="⚡" label="a lightning bolt" />your production process
+                            I can <Emoji symbol="⚡" label="lightning bolt icon" /><span className="emphasis">speed up</span><Emoji symbol="⚡" label="a lightning bolt" />your production process
                         </motion.p>
                         <motion.p 
                             className="subtitle"
                             variants={item}> 
-                            by executing <Emoji symbol="✏️" label="pencil icon" />UX design  AND <Emoji symbol="💻" label="laptop icon" /> front-end UI
+                            by executing <Emoji symbol="✏️" label="pencil icon" /><span className="emphasis">UX design</span>  AND <Emoji symbol="💻" label="laptop icon" /> <span className="emphasis">front-end UI</span>
                         </motion.p>
                         <motion.p
                             className="subtitle"
                             variants={item}>
                             development all in one go!
                         </motion.p>
-                        
                     </motion.div>
-
 
                     <LandingNav />
 

@@ -101,6 +101,21 @@ $transition:  ease-in-out 0.3s;
     .landing-description{
         margin: 2.3rem auto 1.5rem auto;
     }
+    .emphasis {
+        font-family: $hfont;
+        border-radius: 3px;
+        padding: 0.2rem 0.5rem;
+        margin: 2px;
+        background-color: $dark-link-bg;
+        color: $dark-link-color;
+        text-decoration: none;
+        transition: ease-in-out 0.3s;
+        &:hover {
+            color: $dark-link-hover;
+            box-shadow: 3px 2px $dark-body-color;
+            transition: ease-in-out 0.3s;
+        }
+    }
 }
 
 .landing-menu{
