@@ -25,8 +25,8 @@ const Contact = () => {
                     <Socials />
                     <p>Email me at <a href="mailto:helloREMOVETHIS@catcarbn.com">hello @ catcarbn.com!</a></p>
                 </div>
-
             </div>
+           
         </motion.div>
         </>
     );

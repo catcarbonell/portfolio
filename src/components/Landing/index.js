@@ -111,24 +111,20 @@ const Landing = () => {
                             className="landing-description"> 
                         <motion.p
                             variants={item} 
-                            className="subtitle"
-                            >
-                            <Emoji symbol="💻" label="a laptop computer" /> 
-                            &nbsp; I <Link to="/projects">design and build</Link> web apps!
+                            className="subtitle">
+                            I can <Emoji symbol="⚡" label="lightning bolt icon" />speed up<Emoji symbol="⚡" label="a lightning bolt" />your production process
                         </motion.p>
                         <motion.p 
                             className="subtitle"
-                            variants={item}
-                            > 
-                            <Emoji symbol="✏️" label="a pencil" /> &amp; write newbie-friendly <a href="https://dev.to/catcarbn" target="new"> dev articles</a>!
+                            variants={item}> 
+                            by executing <Emoji symbol="✏️" label="pencil icon" />UX design  AND <Emoji symbol="💻" label="laptop icon" /> front-end UI
                         </motion.p>
-                        <motion.p 
+                        <motion.p
                             className="subtitle"
-                            variants={item}
-                            > 
-                            <Emoji symbol="📺" label="a tan hand writing with a pen" /> &amp; 
-                            <a href="https://twitch.tv/catvscode" target="new">stream</a> my attempts at coding challenges on <a href="https://twitch.tv/catvscode" target="new">Twitch</a>! 
+                            variants={item}>
+                            development all in one go!
                         </motion.p>
+                        
                     </motion.div>
 
 
